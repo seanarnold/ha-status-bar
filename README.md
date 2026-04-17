@@ -8,7 +8,8 @@ Built with [Tauri 2](https://tauri.app), no Dock icon, no background windows.
 
 ## Screenshot
 
-<!-- Add a screenshot here -->
+<img width="311" height="196" alt="Screenshot" src="https://github.com/user-attachments/assets/108f99a2-90c0-4b08-8eb5-c8c2bbace079" />
+
 
 ---
 
