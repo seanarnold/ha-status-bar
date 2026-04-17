@@ -1,0 +1,17 @@
+{
+  "$schema": "../gen/schemas/desktop-schema.json",
+  "identifier": "default",
+  "description": "Default permissions",
+  "windows": ["settings"],
+  "permissions": [
+    "core:default",
+    "autostart:allow-enable",
+    "autostart:allow-disable",
+    "autostart:allow-is-enabled",
+    "store:allow-get",
+    "store:allow-set",
+    "store:allow-save",
+    "core:window:allow-hide",
+    "core:window:allow-close"
+  ]
+}

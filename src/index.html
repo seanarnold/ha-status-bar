@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HA Status Bar — Settings</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="container">
+      <h1>HA Status Bar</h1>
+
+      <section class="card">
+        <h2>Connection</h2>
+        <div class="field">
+          <label for="ha-url">Home Assistant URL</label>
+          <input type="text" id="ha-url" placeholder="http://homeassistant.local:8123" />
+        </div>
+        <div class="field">
+          <label for="ha-token">Long-Lived Access Token</label>
+          <input type="password" id="ha-token" placeholder="eyJ..." />
+        </div>
+        <div class="field-row">
+          <button id="btn-test">Test Connection</button>
+          <span id="test-status"></span>
+        </div>
+      </section>
+
+      <section class="card">
+        <h2>Entities</h2>
+        <p class="hint">Test your connection first to load available entities.</p>
+        <input type="text" id="entity-filter" placeholder="Filter entities..." style="margin-bottom:8px;width:100%;box-sizing:border-box;" />
+        <div id="entity-list" class="entity-list">
+          <span class="muted">No entities loaded yet.</span>
+        </div>
+      </section>
+
+      <section class="card">
+        <h2>Refresh Interval</h2>
+        <div class="field-row">
+          <input type="number" id="interval" min="5" max="3600" style="width:80px;" />
+          <label for="interval" style="margin-left:8px;">seconds (min 5)</label>
+        </div>
+      </section>
+
+      <div class="footer">
+        <button id="btn-save" class="primary">Save</button>
+      </div>
+    </main>
+    <script src="main.js"></script>
+  </body>
+</html>
